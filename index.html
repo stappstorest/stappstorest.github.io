@@ -3,48 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StAppStore | Official Portal</title>
+    <title>StAppStore | Our Apps</title>
     <style>
-        /* Rangli va zamonaviy dizayn */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background: #0f172a; 
+            color: #f8fafc; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+            min-height: 100vh;
         }
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        h1 { color: #38bdf8; margin-top: 20px; }
+        
+        /* Soat dizayni */
+        #clock { 
+            font-size: 1.2rem; 
+            margin-bottom: 30px; 
+            color: #94a3b8; 
+            padding: 10px;
         }
-        h1 { font-size: 3rem; margin-bottom: 10px; }
-        #clock { font-size: 1.5rem; margin-top: 20px; font-weight: bold; }
+
+        /* Ilovalar setkasi */
+        .app-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+            gap: 20px; 
+            max-width: 900px; 
+            margin: auto; 
+        }
+        .app-card { 
+            background: #1e293b; 
+            padding: 20px; 
+            border-radius: 15px; 
+            border: 1px solid #334155; 
+            transition: 0.3s; 
+        }
+        .app-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        .btn { 
+            display: block; 
+            padding: 10px; 
+            background: #38bdf8; 
+            color: #0f172a; 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            margin-top: 15px; 
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Welcome to StAppStore</h1>
-        <p>Premium Mobile Applications Portal</p>
-        <div id="clock"></div>
+    <h1>StAppStore Applications</h1>
+    <div id="clock"></div>
+
+    <div class="app-grid">
+        <div class="app-card"><h3>Daqiqa</h3><a href="https://play.google.com/store/apps/details?id=com.dt.daqiqa" class="btn">Install</a></div>
+        <div class="app-card"><h3>Wallpapers</h3><a href="https://play.google.com/store/apps/details?id=com.dt.wallpaperss" class="btn">Install</a></div>
+        <div class="app-card"><h3>Voice Recorder</h3><a href="https://play.google.com/store/apps/details?id=com.st.voicerecorder" class="btn">Install</a></div>
+        <div class="app-card"><h3>Screen Timer</h3><a href="https://play.google.com/store/apps/details?id=com.dt.screentimer" class="btn">Install</a></div>
+        <div class="app-card"><h3>IPTV Player</h3><a href="https://play.google.com/store/apps/details?id=com.st.iptvplayer" class="btn">Install</a></div>
+        <div class="app-card"><h3>Shaxmat</h3><a href="https://play.google.com/store/apps/details?id=com.dt.shaxmat" class="btn">Install</a></div>
+        <div class="app-card"><h3>Checkers</h3><a href="https://play.google.com/store/apps/details?id=com.dt.checkers" class="btn">Install</a></div>
+        <div class="app-card"><h3>Compass</h3><a href="https://play.google.com/store/apps/details?id=com.st.compassst" class="btn">Install</a></div>
+        <div class="app-card"><h3>Internet Meter</h3><a href="https://play.google.com/store/apps/details?id=com.dt.internetmeter" class="btn">Install</a></div>
     </div>
 
     <script>
-        // Vaqt va sanani ko'rsatish funksiyasi
         function updateTime() {
             const now = new Date();
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const timeString = now.toLocaleTimeString();
-            const dateString = now.toLocaleDateString(undefined, options);
-            document.getElementById('clock').innerHTML = dateString + "<br>" + timeString;
+            document.getElementById('clock').innerHTML = now.toDateString() + " | " + now.toLocaleTimeString();
         }
         setInterval(updateTime, 1000);
         updateTime();
