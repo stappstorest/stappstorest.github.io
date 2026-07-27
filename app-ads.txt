@@ -1,6 +1,6 @@
 # app-ads.txt
 # Updated: 2026-01-13T15:24:38.069Z
-
+google.com, pub-8335768739065984, DIRECT, f08c47fec0942fa0
 # app-ads.txt Admob 7/10/2025
 google.com,pub-9966962268328280,DIRECT,f08c47fec0942fa0
 google.com,pub-7412758971890594,DIRECT,f08c47fec0942fa0
