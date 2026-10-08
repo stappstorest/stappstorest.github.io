@@ -1,4 +1,17 @@
 # app-ads.txt
+pubnative.net, 1017356, RESELLER, d641df8625486a7b
+video.unrulymedia.com, 3890682751, RESELLER, 98c21ef9a666c68b
+smaato.com, 1100059831, RESELLER, 07bcf65f187117b4
+video.unrulymedia.com, 630415254, RESELLER, 98c21ef9a666c68b
+video.unrulymedia.com, 894246135, RESELLER, 98c21ef9a666c68b
+video.unrulymedia.com, 201313863, RESELLER, 98c21ef9a666c68b
+admanmedia.com, 2411, RESELLER
+metup.it, AJxF6R648a9M6CaTvK, RESELLER
+spinx.biz, 1373698900, RESELLER
+video.unrulymedia.com, 158727213, RESELLER, 98c21ef9a666c68b
+media.net, 8CU47MDK1, RESELLER, 818f58666cabc936
+media.net, 8CUUQ286L, RESELLER, 818f58666cabc936
+zmaticoo.com, 5135375, RESELLER
 # Updated: 2026-01-13T15:24:38.069Z
 google.com, pub-4578358535008915, DIRECT, f08c47fec0942fa0
 # app-ads.txt Admob 7/10/2025
